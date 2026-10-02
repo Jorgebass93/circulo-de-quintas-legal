@@ -1,0 +1,23 @@
+/* legal.css — Páginas de privacidad y soporte (misma estética que la app: zinc + cian, monoespaciada) */
+:root {
+    color-scheme: dark;
+    --bg: #030303; --z900: #18181b; --z800: #27272a; --z500: #71717a; --z400: #a1a1aa; --z300: #d4d4d8; --z200: #e4e4e7;
+    --cy500: #06b6d4; --cy400: #22d3ee;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--z300); font-family: monospace; font-size: 15px; line-height: 1.65; }
+main { max-width: 720px; margin: 0 auto; padding: max(24px, env(safe-area-inset-top)) 16px 48px; }
+.k { margin: 0 0 4px; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cy400); }
+h1 { margin: 0 0 6px; font-size: 22px; line-height: 1.3; color: #fff; }
+h2 { margin: 32px 0 8px; padding-top: 12px; border-top: 1px dashed var(--z800); font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--z200); }
+p, li { color: var(--z300); }
+.meta { font-size: 12px; color: var(--z400); }
+a { color: var(--cy400); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--cy500); outline-offset: 2px; }
+.lang { display: flex; gap: 8px; margin: 16px 0 8px; }
+.lang a { padding: 8px 12px; border: 1px solid var(--z800); border-radius: 8px; background: var(--z900); text-decoration: none; font-size: 12px; font-weight: 700; }
+.card { margin: 16px 0; padding: 12px 14px; border: 1px solid var(--cy500); border-radius: 10px; background: rgba(8, 51, 68, 0.25); color: var(--z200); }
+dt { margin-top: 14px; font-weight: 700; color: var(--z200); }
+dd { margin: 4px 0 0; }
+footer { margin-top: 40px; font-size: 12px; color: var(--z500); }
